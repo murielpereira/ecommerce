@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+  --cor-fundo: white;
+  --cor-fundo-invertido: black;
+  --cor-texto: black;
+  --cor-texto-invertido: white;
+  --cor-borda: #dcdcdc;
+  --cor-fundo2: #c7f304;
+}
+
+* { 
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+ .top-header{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-texto-invertido);
+  background-color: var(--cor-fundo-invertido);
+  height: 42px;
+  font-size: smaller;
+ }
+
+ #texto-header{
+  letter-spacing: 0.1rem;
+ }
+
+ .midle-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 80vw;
+  height: 100px;
+ }
+
+ .logo img{
+  max-height: 40px;
+  margin: auto;
+ }
+
+ .barra{
+  width: 500px;
+  height: 45px;
+  border-radius: 30px;
+  border:1px solid var(--cor-borda);
+ }
+ 
+ .barra:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+ }
+
+ .barra:focus-within{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline:none;
+ }
+
+ .barra-pesquisa{
+  width: 450px;
+  height: 43px;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  outline: none;
+  padding: 20px;
+ }
+
+ .lupa{
+  height:17px;
+  position:relative;
+  top: 4px;
+  left: 4px;
+}
+
+.conta{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.conta img{
+  max-height: 25px;
+  margin: 5px 13px 5px 13px;
+}
+
+.conta img :hover{
+  transform: scale(1.5);
+  background-color: #c7f304;
+}
