@@ -145,8 +145,8 @@
 
 .category-name{
   font-weight: bolder;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,13 +159,13 @@
 
 .produto-container2{
   height: auto;
-  padding: 20px 0px;
   display: flex;
- 
   align-items: center;
   width: 85%;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
+
 
 .produto-banner{
   margin-left: 20px;
@@ -178,7 +178,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+}
+
+.produto-banner:first-child{
+  margin-left: 0px !important;
 }
 
 .produto-banner:hover{
